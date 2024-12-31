@@ -69,13 +69,13 @@ namespace Lab01
         protected global::System.Web.UI.WebControls.TextBox txtSoLuong;
 
         /// <summary>
-        /// Button1 control.
+        /// btThem control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btThem;
 
         /// <summary>
         /// lstDanhSach control.
@@ -87,21 +87,21 @@ namespace Lab01
         protected global::System.Web.UI.WebControls.ListBox lstDanhSach;
 
         /// <summary>
-        /// ImageButton1 control.
+        /// ibtXoa control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
+        protected global::System.Web.UI.WebControls.ImageButton ibtXoa;
 
         /// <summary>
-        /// Button3 control.
+        /// btInDonHang control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button3;
+        protected global::System.Web.UI.WebControls.Button btInDonHang;
     }
 }

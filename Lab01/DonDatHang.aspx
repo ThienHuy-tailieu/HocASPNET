@@ -7,17 +7,12 @@
     <title></title>
     <link href="Content/bootstrap.rtl.min.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-        }
         .auto-style2 {
-            width: 416px;
+            width: 350px;
         }
-        .auto-style3 {
-            margin-left: 0px;
-        }
-        .auto-style4 {
-            height: 27px;
+        .auto-style5 {
+            text-align: center;
+            width: 350px;
         }
     </style>
 </head>
@@ -47,22 +42,23 @@
                         &nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="text-center">Chọn các loại bánh sau:&nbsp;<br />
+                    <td class="auto-style5">Chọn các loại bánh sau:&nbsp;<br />
                         &nbsp;<asp:DropDownList ID="ddlLoaiBanh" runat="server" CssClass="form-select">
                         </asp:DropDownList>
                         <br />
                         Số lượng:&nbsp;<asp:TextBox ID="txtSoLuong" runat="server"></asp:TextBox>
                         cái<br />
-                        <asp:Button ID="Button1" runat="server" Text="&gt;" />
+                        <br />
+                        <asp:Button ID="btThem" runat="server" Text="&gt;" OnClick="Button1_Click" Width="39px" />
                     </td>
                     <td class="text-center">Danh sách bánh được đặt:&nbsp;<br />
-                        <asp:ListBox ID="lstDanhSach" runat="server" CssClass="form-control"></asp:ListBox>
+                        <asp:ListBox ID="lstDanhSach" runat="server" CssClass="form-control" SelectionMode="Multiple"></asp:ListBox>
                         <br />
-                        <asp:ImageButton ID="ImageButton1" runat="server" />
+                        <asp:ImageButton ID="ibtXoa" runat="server" ImageUrl="~/Images/Images/delete.gif" OnClick="ibtXoa_Click" style="height: 16px" />
                     </td>
                 </tr>
                 <tr>
-                    <td class="text-center" colspan="2"><asp:Button ID="Button3" runat="server" Text="In đơn đặt hàng" />
+                    <td class="text-center" colspan="2"><asp:Button ID="btInDonHang" runat="server" Text="In đơn đặt hàng" OnClick="btInDonHang_Click" />
                     </td>
                 </tr>              
             </table>
