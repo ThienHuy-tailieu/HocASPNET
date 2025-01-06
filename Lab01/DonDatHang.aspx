@@ -62,7 +62,7 @@
                     </td>
                 </tr>              
             </table>
-
+            <asp:Label ID="lbHoaDon" runat="server" Text="Hóa Đơn:"></asp:Label>
         </div>
     </form>
 </body>

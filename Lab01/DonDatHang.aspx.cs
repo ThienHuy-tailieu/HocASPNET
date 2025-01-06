@@ -45,8 +45,23 @@ namespace Lab01
             kq += "<div class='border p-3'>";
 
             kq += string.Format("Khách hàng: <b> {0} </b> <br>", txtKhachHang.Text);
-            kq += string.Format("Địa chỉ: <b> {0} </b> <br>", txtKhachHang.Text);
-            kq += string.Format("Khách hàng: <b> {0} </b> <br>", txtKhachHang.Text);
+            kq += string.Format("Địa chỉ: <b> {0} </b> <br>", txtDiaChi.Text);
+            kq += string.Format("Mã số thuế: <b> {0} </b> <br>", txtMaSo.Text);
+
+            kq += "<b>Đặt các loại bánh sau: </b>";
+
+            kq += "<table class='table table-bordered'>";
+            foreach (ListItem item in lstDanhSach.Items)
+            {
+                string[] data = item.Text.Split('(');
+                kq += string.Format("<tr><td>{0}</td><td>{1}</td></tr>", data[0], data[1].Replace(')', ' ').Trim());
+            }
+
+            kq += "</table>";
+
+            kq += "</div>";
+
+            lbHoaDon.Text = kq;
         }
     }
 }
