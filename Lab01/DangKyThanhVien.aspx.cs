@@ -43,6 +43,18 @@ namespace Lab01
             kq += $"<li> Họ tên: <i> {txtHoten.Text}</i>";
             kq += $"<li> Tên đăng nhập: <i> {txtTendn.Text}</i>";
             kq += $"<li> Mật khẩu: <i> {txtMatkhau.Text}</i>";
+            kq += $"<li> Ngày sinh: <i> {ddlNgay.SelectedItem.Text}/{ddlThang.SelectedItem.Text}/{ddlNam.SelectedItem.Text}</i>";
+            if (ckNam.Checked)
+            {
+                kq += $"<li> Giới tính: <i>{ckNam.Text}</i>";
+            }
+            else
+            {
+                kq += $"<li> Giới tính: <i>Nữ</i>";
+            }
+            kq += $"<li> Email: <i>{txtEmail.Text}</i>";
+            kq += $"<li> Địa chỉ: <i>{txtDiaChi.Text}</i>";
+            kq += $"<li> Điện thoại: <i>{txtDienThoai.Text}</i>";
 
             kq += "</ul>";
 
