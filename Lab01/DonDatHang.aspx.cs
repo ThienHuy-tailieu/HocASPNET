@@ -25,16 +25,16 @@ namespace Lab01
             string tenbanh = ddlLoaiBanh.SelectedItem.Text;
             int soluong = int.Parse(txtSoLuong.Text);
             string kq = string.Format("{0} ({1})", tenbanh, soluong);
-            lstDanhSach.Items.Add(kq);
+            lstBanh.Items.Add(kq);
         }
 
         protected void ibtXoa_Click(object sender, ImageClickEventArgs e)
         {
-            for(int i = lstDanhSach.Items.Count - 1; i >= 0; i--)
+            for(int i = lstBanh.Items.Count - 1; i >= 0; i--)
             {
-                if (lstDanhSach.Items[i].Selected)
+                if (lstBanh.Items[i].Selected)
                 {
-                    lstDanhSach.Items.RemoveAt(i);
+                    lstBanh.Items.RemoveAt(i);
                 }
             }
         }
@@ -51,10 +51,10 @@ namespace Lab01
             kq += "<b>Đặt các loại bánh sau: </b>";
 
             kq += "<table class='table table-bordered'>";
-            foreach (ListItem item in lstDanhSach.Items)
+            foreach (ListItem item in lstBanh.Items)
             {
-                string[] data = item.Text.Split('(');
-                kq += string.Format("<tr><td>{0}</td><td>{1}</td></tr>", data[0], data[1].Replace(')', ' ').Trim());
+                string[] data = item.Text.Split(new char[] { '(', ')' });
+                kq += string.Format("<tr><td>{0}</td><td>{1}</td></tr>", data[0], data[1]);
             }
 
             kq += "</table>";

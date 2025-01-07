@@ -52,7 +52,7 @@
                         <asp:Button ID="btThem" runat="server" Text="&gt;" OnClick="Button1_Click" Width="39px" />
                     </td>
                     <td class="text-center">Danh sách bánh được đặt:&nbsp;<br />
-                        <asp:ListBox ID="lstDanhSach" runat="server" CssClass="form-control" SelectionMode="Multiple"></asp:ListBox>
+                        <asp:ListBox ID="lstBanh" runat="server" CssClass="form-control" SelectionMode="Multiple"></asp:ListBox>
                         <br />
                         <asp:ImageButton ID="ibtXoa" runat="server" ImageUrl="~/Images/Images/delete.gif" OnClick="ibtXoa_Click" style="height: 16px" />
                     </td>
@@ -62,7 +62,7 @@
                     </td>
                 </tr>              
             </table>
-            <asp:Label ID="lbHoaDon" runat="server" Text="Hóa Đơn:"></asp:Label>
+            <asp:Label ID="lbHoaDon" runat="server" ForeColor="#ff0000"></asp:Label>
         </div>
     </form>
 </body>
