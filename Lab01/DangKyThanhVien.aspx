@@ -46,7 +46,7 @@
                     <td class="auto-style5">
                         <asp:TextBox ID="txtTendn" runat="server" CssClass="form-control"></asp:TextBox>
                     </td>
-                    <td rowspan="12">
+                    <td rowspan="12">   
                         <asp:Label ID="lblHoSo" runat="server" CssClass="auto-style6" Height="24px" Width="73px"></asp:Label>
                     </td>
                 </tr>
@@ -114,7 +114,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" class="text-center">
-                        <asp:Button ID="btDangKy" runat="server" Text="Đăng Ký" />
+                        <asp:Button ID="btDangKy" runat="server" Text="Đăng Ký" OnClick="btDangKy_Click" />
                     </td>
                 </tr>
             </table>
